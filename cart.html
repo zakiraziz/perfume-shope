@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,3 +130,133 @@
     </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Luxury Perfume Shop</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Luxury Perfume Shop</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <!-- Empty Cart Message -->
+            <div class="empty-cart-message" id="emptyCartMessage">
+                <p>Your cart is empty. Start shopping now!</p>
+                <a href="shop.html" class="btn continue-shopping-btn">Continue Shopping</a>
+            </div>
+            <!-- Cart Items -->
+            <div class="cart-items" id="cartItems">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h3>Rose Elegance</h3>
+                        <p>$50</p>
+                        <label for="quantity1">Quantity:</label>
+                        <input type="number" id="quantity1" name="quantity" min="1" value="1">
+                        <button class="btn remove-btn" aria-label="Remove Rose Elegance from cart">Remove</button>
+                    </div>
+                </div>
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h3>Midnight Musk</h3>
+                        <p>$60</p>
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" name="quantity" min="1" value="1">
+                        <button class="btn remove-btn" aria-label="Remove Midnight Musk from cart">Remove</button>
+                    </div>
+                </div>
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h3>Vanilla Bliss</h3>
+                        <p>$45</p>
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+                        <button class="btn remove-btn" aria-label="Remove Vanilla Bliss from cart">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <p>Subtotal: $155</p>
+                <p>Shipping: $10</p>
+                <p>Total: $165</p>
+                <!-- Discount Code Input -->
+                <div class="discount-code">
+                    <label for="discountCode">Discount Code:</label>
+                    <input type="text" id="discountCode" name="discountCode" placeholder="Enter discount code">
+                    <button class="btn apply-discount-btn">Apply</button>
+                </div>
+                <!-- Checkout and Continue Shopping Buttons -->
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+                <a href="shop.html" class="btn continue-shopping-btn">Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luxury Perfume Shop. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+
+        // Function to check if the cart is empty
+        function checkCartEmpty() {
+            if (cartItems.children.length === 0) {
+                emptyCartMessage.style.display = 'block';
+            } else {
+                emptyCartMessage.style.display = 'none';
+            }
+        }
+
+        // Add event listeners to remove buttons
+        removeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const cartItem = button.closest('.cart-item');
+                cartItem.remove();
+                checkCartEmpty();
+            });
+        });
+
+        // Initial check for empty cart
+        checkCartEmpty();
+    </script>
+</body>
+</html>
+
