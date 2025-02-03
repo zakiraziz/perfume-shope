@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Perfume Shop</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+
+        <!-- Search FAQ -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for a question..." oninput="searchFAQ()">
+            <button class="clear-btn" onclick="clearSearch()">Clear Search</button>
+        </div>
+
+
+        <div class="faq-container">
+            <div class="faq">
+                <h3 onclick="toggleAnswer(0)">What types of perfumes do you sell?</h3>
+                <p id="answer-0">We sell a wide variety of perfumes including floral, oriental, woody, and fresh scents.</p>
+            </div>
+
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(1)">Are the perfumes original?</h3>
+                <p id="answer-1">Yes, we only sell 100% authentic and original perfumes.</p>
+            </div>
+
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(2)">Do you offer delivery?</h3>
+                <p id="answer-2">Yes, we offer delivery services to most areas. Please check our delivery page for more details.</p>
+            </div>
+
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(3)">Can I return or exchange a perfume?</h3>
