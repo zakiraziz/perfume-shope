@@ -1,28 +1,47 @@
-📜 README for Luxury Perfume Shop
-🌸 Luxury Perfume Shop 🌸
+#  📜 README for Luxury Perfume Shop
+# 🌸 Luxury Perfume Shop 🌸
 A beautifully designed e-commerce website for premium perfumes. Experience elegance and luxury with our exclusive collection!
 
 
 
 📌 Table of Contents
+
 🌟 Features
+
 🎨 Screenshots
+
 🛠️ Tech Stack
+
 📂 Folder Structure
+
 🚀 Getting Started
+
 ⚙️ Installation
+
 📜 Usage
+
 🛒 Shop Categories
+
 📢 Customer Testimonials
+
 📞 Contact Us
+
 📄 License
-🌟 Features
+
+# 🌟 Features
+
 ✔️ Beautiful & responsive UI 🌍
+
 ✔️ Luxury perfume collection 💎
+
 ✔️ Easy navigation & user-friendly design 🏆
+
 ✔️ Shopping cart integration 🛒
+
 ✔️ Secure checkout process 🔒
+
 ✔️ Customer reviews & testimonials 🗣️
+
 ✔️ Newsletter subscription 📩
 
 🎨 Screenshots
@@ -34,13 +53,13 @@ A beautifully designed e-commerce website for premium perfumes. Experience elega
 
 📌 Cart & Checkout
 
-🛠️ Tech Stack
+#  🛠️ Tech Stack
 HTML5 🏗️ - Structure of the website
 CSS3 🎨 - Styling and design
 JavaScript (JS) ⚡ - Interactive features
 FontAwesome 🎭 - Icons & UI enhancements
 Google Fonts (Playfair Display) ✍️ - Elegant typography
-📂 Folder Structure
+#  📂 Folder Structure
 pgsql
 Copy
 Edit
